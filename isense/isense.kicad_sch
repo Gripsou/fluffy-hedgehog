@@ -2620,6 +2620,18 @@
 		)
 		(uuid 9ef9cfa9-edfd-4c64-bd76-a13e87000eea)
 	)
+	(rectangle
+		(start 170.18 46.99)
+		(end 254 90.17)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d07a56d9-ece0-4d65-9ee2-4a239fb99887)
+	)
 	(text "ZXCT1009"
 		(exclude_from_sim no)
 		(at 142.24 104.14 0)
@@ -2629,6 +2641,16 @@
 			)
 		)
 		(uuid "152c2e6a-085f-444e-8dab-83a9237f139b")
+	)
+	(text "Load simulation"
+		(exclude_from_sim no)
+		(at 215.9 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "801f823a-d365-400b-a4c3-b976404be18f")
 	)
 	(label "V_{DRAIN}"
 		(at 182.88 62.23 0)

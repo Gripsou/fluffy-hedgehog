@@ -2652,6 +2652,26 @@
 		)
 		(uuid "801f823a-d365-400b-a4c3-b976404be18f")
 	)
+	(label "PNP_emitter"
+		(at 119.38 109.22 180)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b53ef4c-b892-4b49-ac5b-9a87065bfea6")
+	)
+	(label "PNP_base"
+		(at 109.22 116.84 180)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify right bottom)
+		)
+		(uuid "3fed5d78-0f22-44d1-9f54-d614097be307")
+	)
 	(label "V_{DRAIN}"
 		(at 182.88 62.23 0)
 		(effects
@@ -2671,6 +2691,16 @@
 			(justify left bottom)
 		)
 		(uuid "5c7e5347-3f36-4872-a4c2-f0da67601e34")
+	)
+	(label "PNP_collector"
+		(at 119.38 124.46 180)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify right bottom)
+		)
+		(uuid "78c5a9c3-c1bf-4ae1-9735-87d28dd8bb49")
 	)
 	(label "V_{LOAD}"
 		(at 144.78 40.64 0)
@@ -2954,7 +2984,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "y1=0 y2=5 td=2n tr=2n tf=2n tw=3m per=7m"
+		(property "Sim.Params" "y1=0 y2=5 td=2n tr=2n tf=2n tw=10u per=33u"
 			(at 201.422 78.4945 0)
 			(effects
 				(font
@@ -3631,7 +3661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "rs=500m cjo=300p"
+		(property "Sim.Params" "rs=500m cjo=300p bv=4.7 ibv=5m fv_max=40 id_max=250m"
 			(at 93.98 85.09 0)
 			(effects
 				(font
@@ -4207,106 +4237,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:PNP")
-		(at 116.84 116.84 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d8c15c7b-9540-43f6-af73-739ac497e86d")
-		(property "Reference" "Q102"
-			(at 121.6914 115.6278 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FMMT597TA"
-			(at 121.6914 118.0521 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 152.4 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 116.84 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PNP"
-			(at 116.84 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 116.84 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 116.84 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0ecce19a-0753-4298-ac22-548d8dc86c85")
-		)
-		(pin "2"
-			(uuid "9c16ae26-14ac-41bf-b4f4-1f0b32cd4ac5")
-		)
-		(pin "3"
-			(uuid "26dcc49d-01a9-4084-8e5e-976af97a1744")
-		)
-		(instances
-			(project ""
-				(path "/d002ebf6-1637-4164-b68c-36870675b076"
-					(reference "Q102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Simulation_SPICE:D")
 		(at 152.4 130.81 270)
 		(unit 1)
@@ -4378,7 +4308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "rs=480m cjo=300p"
+		(property "Sim.Params" "rs=480m cjo=300p bv=5.1 ibv=5 fv_max=40 id_max=250m"
 			(at 152.4 130.81 0)
 			(effects
 				(font
@@ -4397,6 +4327,124 @@
 			(project "isense"
 				(path "/d002ebf6-1637-4164-b68c-36870675b076"
 					(reference "D102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 116.84 116.84 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df08aa2c-f491-4d21-bcd4-cb8352011c67")
+		(property "Reference" "Q1"
+			(at 122.174 118.1101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FMMT597"
+			(at 122.174 115.5701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 152.4 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "FMMT597.spice.lib"
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "FMMT597"
+			(at 116.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "41284c70-edf6-4921-acc4-ab1e7b6f1480")
+		)
+		(pin "3"
+			(uuid "e2ea9d1a-9236-4a5a-bb6b-ad91c5038e9a")
+		)
+		(pin "1"
+			(uuid "e7976de4-adae-4c2e-8321-f02239271db0")
+		)
+		(instances
+			(project ""
+				(path "/d002ebf6-1637-4164-b68c-36870675b076"
+					(reference "Q1")
 					(unit 1)
 				)
 			)

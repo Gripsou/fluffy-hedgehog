@@ -429,7 +429,8 @@
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
-      "Simulation_SPICE"
+      "Simulation_SPICE",
+      "ZXCT1009"
     ]
   },
   "meta": {

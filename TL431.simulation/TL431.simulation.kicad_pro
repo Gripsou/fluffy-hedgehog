@@ -371,6 +371,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": "TL431.simulation.wbk"
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -386,6 +394,10 @@
     [
       "8784c87c-d064-4380-aec7-9dbcace175b6",
       "Root"
+    ],
+    [
+      "87637ab5-90a4-451f-977f-84adca8e064d",
+      "TL431 Model"
     ]
   ],
   "text_variables": {}

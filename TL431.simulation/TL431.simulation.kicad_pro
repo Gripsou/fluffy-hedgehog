@@ -237,8 +237,9 @@
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
-      "New_Library",
-      "TL431.simulation_model"
+      "TL431.simulation_model",
+      "SFH6156-2.simulation_model",
+      "Simulation_SPICE"
     ]
   },
   "meta": {

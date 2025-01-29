@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TL431.simulation_model")(type "KiCad")(uri "${KIPRJMOD}/TL431.simulation_model.kicad_sym")(options "")(descr "TL431 simulation model(s). Footprint may be added in the fucture."))
+)

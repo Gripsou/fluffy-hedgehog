@@ -236,7 +236,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "New_Library",
+      "TL431.simulation_model"
+    ]
   },
   "meta": {
     "filename": "TL431.simulation.kicad_pro",

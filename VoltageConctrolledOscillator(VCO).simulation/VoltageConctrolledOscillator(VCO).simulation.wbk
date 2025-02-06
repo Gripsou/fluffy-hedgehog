@@ -4,7 +4,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 1.25n 1m 0 1u",
+        ".tran 1u 150m 0 10u",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli"
@@ -20,13 +20,32 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
-          "signal": "V(/VIN)",
+          "color": "rgb(255, 127, 0)",
+          "signal": "V(/Test1/VIN)",
           "trace_type": 257
         },
         {
-          "color": "rgb(77, 175, 74)",
-          "signal": "V(VOUT)",
+          "color": "rgb(166, 86, 40)",
+          "cursor1": {
+            "position": 0.03800447799823907,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursor2": {
+            "position": 0.03903319618276697,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/Test1/VS)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(255, 255, 51)",
+          "signal": "V(/Test1/VT)",
           "trace_type": 257
         }
       ]

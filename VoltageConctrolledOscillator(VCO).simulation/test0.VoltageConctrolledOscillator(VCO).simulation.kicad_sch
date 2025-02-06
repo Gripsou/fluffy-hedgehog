@@ -1997,6 +1997,17 @@
 		)
 		(uuid "fd477d88-a6ec-49f5-a214-5528800902a3")
 	)
+	(text "VCO Schematic found in Wikipedia article (the french one about VCO)"
+		(exclude_from_sim no)
+		(at 127 147.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(href "https://fr.wikipedia.org/wiki/Oscillateur_command%C3%A9_en_tension#/media/Fichier:VCO_80_MHz.png")
+		)
+		(uuid "9d3e44ae-ebfe-40d7-8f16-0553c0b2dff9")
+	)
 	(label "V_{IN}"
 		(at 106.68 116.84 180)
 		(effects
@@ -2032,7 +2043,7 @@
 		(lib_id "Device:R")
 		(at 113.03 116.84 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2089,7 +2100,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "R4")
 					(unit 1)
 				)
@@ -2100,7 +2111,7 @@
 		(lib_id "Device:C")
 		(at 171.45 96.52 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2157,7 +2168,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "C7")
 					(unit 1)
 				)
@@ -2168,7 +2179,7 @@
 		(lib_id "Device:C")
 		(at 146.05 81.28 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2225,7 +2236,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "C4")
 					(unit 1)
 				)
@@ -2236,7 +2247,7 @@
 		(lib_id "Simulation_SPICE:0")
 		(at 106.68 134.62 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2291,7 +2302,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "#GND02")
 					(unit 1)
 				)
@@ -2302,7 +2313,7 @@
 		(lib_id "Device:C")
 		(at 139.7 110.49 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2361,7 +2372,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "C2")
 					(unit 1)
 				)
@@ -2372,7 +2383,7 @@
 		(lib_id "Device:C")
 		(at 139.7 123.19 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2436,13 +2447,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R")
 		(at 146.05 93.98 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2499,7 +2516,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "R3")
 					(unit 1)
 				)
@@ -2510,7 +2527,7 @@
 		(lib_id "power:+12V")
 		(at 152.4 68.58 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2565,7 +2582,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "#PWR01")
 					(unit 1)
 				)
@@ -2577,7 +2594,7 @@
 		(at 106.68 124.46 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2673,6 +2690,12 @@
 		(instances
 			(project ""
 				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+					(reference "V_1")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "V_1")
 					(unit 1)
 				)
@@ -2774,13 +2797,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:R")
 		(at 152.4 74.93 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2839,7 +2868,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "R6")
 					(unit 1)
 				)
@@ -2850,7 +2879,7 @@
 		(lib_id "Device:C")
 		(at 133.35 104.14 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -2907,7 +2936,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "C3")
 					(unit 1)
 				)
@@ -2918,7 +2947,7 @@
 		(lib_id "Simulation_SPICE:NPN")
 		(at 149.86 104.14 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3012,13 +3041,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:L")
 		(at 119.38 110.49 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3082,13 +3117,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
+					(reference "L1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "power:+12V")
 		(at 60.706 116.84 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3148,13 +3189,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:0")
 		(at 127 93.98 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3210,7 +3257,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "#GND07")
 					(unit 1)
 				)
@@ -3221,7 +3268,7 @@
 		(lib_id "Device:R")
 		(at 133.35 93.98 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3278,7 +3325,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "R2")
 					(unit 1)
 				)
@@ -3289,7 +3336,7 @@
 		(lib_id "Simulation_SPICE:VDC")
 		(at 60.706 124.46 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3381,13 +3428,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
+					(reference "V_0")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:0")
 		(at 60.706 132.08 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3442,7 +3495,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "#GND01")
 					(unit 1)
 				)
@@ -3453,7 +3506,7 @@
 		(lib_id "Simulation_SPICE:0")
 		(at 139.7 81.28 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3509,7 +3562,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "#GND06")
 					(unit 1)
 				)
@@ -3520,7 +3573,7 @@
 		(lib_id "Device:C")
 		(at 129.54 123.19 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3579,7 +3632,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "C5")
 					(unit 1)
 				)
@@ -3590,7 +3643,7 @@
 		(lib_id "Device:R")
 		(at 152.4 123.19 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3654,13 +3707,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:C")
 		(at 165.1 123.19 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3719,7 +3778,7 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "C6")
 					(unit 1)
 				)
@@ -3730,7 +3789,7 @@
 		(lib_id "Device:R")
 		(at 152.4 87.63 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -3789,16 +3848,11 @@
 		)
 		(instances
 			(project "VoltageConctrolledOscillator(VCO).simulation"
-				(path "/1ef713ee-5208-45bb-a886-68d3bad2ed43"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b/a3a5a66e-2836-4c13-8331-37a2c9b1332c"
 					(reference "R5")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
 		)
 	)
 )

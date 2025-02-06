@@ -1,0 +1,89 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "39e238e2-77a8-4917-9f90-31fbe07c1d9b")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 127 101.6)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "33d1ecec-d6c1-4c16-b01f-248afe8b4517")
+		(property "Sheetname" "Test1"
+			(at 127 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VCO.test1.kicad_sch"
+			(at 127 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "VoltageConctrolledOscillator(VCO).simulation"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 101.6)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a3a5a66e-2836-4c13-8331-37a2c9b1332c")
+		(property "Sheetname" "Test0"
+			(at 203.2 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "test0.VoltageConctrolledOscillator(VCO).simulation.kicad_sch"
+			(at 203.2 127.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "VoltageConctrolledOscillator(VCO).simulation"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

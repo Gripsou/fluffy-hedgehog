@@ -4,7 +4,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 100u 100m 0 100u",
+        ".tran 1.25n 1m 0 1u",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli"
@@ -19,6 +19,11 @@
       "measurements": [],
       "showGrid": true,
       "traces": [
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/VIN)",
+          "trace_type": 257
+        },
         {
           "color": "rgb(77, 175, 74)",
           "signal": "V(VOUT)",

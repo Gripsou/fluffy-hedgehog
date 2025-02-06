@@ -2017,27 +2017,16 @@
 		)
 		(uuid "76c7018e-cac3-43d6-90e0-90d335009892")
 	)
-	(global_label "V_{OUT}"
+	(hierarchical_label "V_{OUT}"
 		(shape output)
 		(at 177.8 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.25 1.25)
 			)
 			(justify left)
 		)
-		(uuid "9244a325-db8a-4b89-a0dd-381ed3c34721")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.7167 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "bffa4e3f-2502-482c-8767-9b9b076de41d")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2647,7 +2636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "dc=2.5 ampl=2.5 f=250 ac=2.5"
+		(property "Sim.Params" "dc=2.5 ampl=2.5 f=80meg ac=2.5"
 			(at 102.87 126.8701 0)
 			(effects
 				(font

@@ -407,6 +407,14 @@
     [
       "33d1ecec-d6c1-4c16-b01f-248afe8b4517",
       "Test1"
+    ],
+    [
+      "d56bf567-a17b-406e-9e19-01f4db080b75",
+      "Test 2"
+    ],
+    [
+      "7f4923fb-1a63-4986-bc95-347b0c0b8dee",
+      "Current Mirror | Current Source"
     ]
   ],
   "text_variables": {}

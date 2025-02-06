@@ -5696,6 +5696,44 @@
 			)
 		)
 	)
+	(sheet
+		(at 50.8 76.2)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d56bf567-a17b-406e-9e19-01f4db080b75")
+		(property "Sheetname" "Test 2"
+			(at 50.8 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "VCO.test2.kicad_sch"
+			(at 50.8 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "VoltageConctrolledOscillator(VCO).simulation"
+				(path "/39e238e2-77a8-4917-9f90-31fbe07c1d9b"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

@@ -20,11 +20,6 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(255, 127, 0)",
-          "signal": "V(/Test1/VIN)",
-          "trace_type": 257
-        },
-        {
           "color": "rgb(166, 86, 40)",
           "cursor1": {
             "position": 0.03800447799823907,
@@ -46,6 +41,11 @@
         {
           "color": "rgb(255, 255, 51)",
           "signal": "V(/Test1/VT)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/VIN)",
           "trace_type": 257
         }
       ]

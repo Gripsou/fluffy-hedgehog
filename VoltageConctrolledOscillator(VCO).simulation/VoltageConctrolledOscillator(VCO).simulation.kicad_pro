@@ -237,7 +237,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "power"
+    ]
   },
   "meta": {
     "filename": "VoltageConctrolledOscillator(VCO).simulation.kicad_pro",

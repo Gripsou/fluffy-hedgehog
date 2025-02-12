@@ -1298,25 +1298,45 @@
 		)
 		(uuid "fd819103-c101-4be1-b01d-094106e0e522")
 	)
-	(label "V_{COL}"
+	(label "V_{R1-C1-cQ1}"
+		(at 101.6 88.9 180)
+		(effects
+			(font
+				(size 1.25 1.25)
+			)
+			(justify right bottom)
+		)
+		(uuid "11ee0671-9ad0-43c5-a218-c3e560c9cefd")
+	)
+	(label "V_{R4-C2-cQ2}"
 		(at 177.8 88.9 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.25 1.25)
 			)
 			(justify left bottom)
 		)
 		(uuid "87609d86-42fe-4a4a-ad25-91b4cbee9d16")
 	)
-	(label "V_{BASE}"
-		(at 144.78 101.6 0)
+	(label "V_{R2-C1-bQ2}"
+		(at 167.64 101.6 180)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.25 1.25)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5d14f09-a5b5-423a-968b-42a19a032b31")
+	)
+	(label "V_{R3-C2-bQ1}"
+		(at 111.76 101.6 0)
+		(effects
+			(font
+				(size 1.25 1.25)
 			)
 			(justify left bottom)
 		)
-		(uuid "a5d14f09-a5b5-423a-968b-42a19a032b31")
+		(uuid "ca723a9f-bb96-49a0-ba1c-f78b53403f63")
 	)
 	(symbol
 		(lib_id "power:+15V")
@@ -1393,7 +1413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4487438a-c0c9-40c0-a066-d1a6f9253b0c")
-		(property "Reference" "R102"
+		(property "Reference" "R4"
 			(at 180.34 78.7399 0)
 			(effects
 				(font
@@ -1402,11 +1422,11 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
-			(at 180.34 81.2799 0)
+		(property "Value" "100"
+			(at 180.34 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left)
 			)
@@ -1447,7 +1467,7 @@
 		(instances
 			(project "astable-oscillator.simulation"
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "R102")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -1627,7 +1647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af17b2b3-40c8-40e3-a586-defa82e09dec")
-		(property "Reference" "C102"
+		(property "Reference" "C2"
 			(at 166.37 81.28 90)
 			(effects
 				(font
@@ -1635,7 +1655,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1u"
 			(at 166.37 83.82 90)
 			(effects
 				(font
@@ -1679,7 +1699,7 @@
 		(instances
 			(project "astable-oscillator.simulation"
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "C102")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -1695,7 +1715,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3d9f093-5050-49fa-a4ec-3f7ba083e65e")
-		(property "Reference" "Q101"
+		(property "Reference" "Q1"
 			(at 98.298 100.3299 0)
 			(effects
 				(font
@@ -1779,7 +1799,7 @@
 		(instances
 			(project ""
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "Q101")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -1795,7 +1815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8b49543-1292-4ddf-b45c-8341d2e4a469")
-		(property "Reference" "C101"
+		(property "Reference" "C1"
 			(at 113.03 81.28 90)
 			(effects
 				(font
@@ -1803,7 +1823,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "1u"
 			(at 113.03 83.82 90)
 			(effects
 				(font
@@ -1847,7 +1867,7 @@
 		(instances
 			(project ""
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "C101")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -1928,7 +1948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf885967-0c17-4996-99ec-f47bbbfa7b6c")
-		(property "Reference" "R103"
+		(property "Reference" "R2"
 			(at 129.54 78.7399 0)
 			(effects
 				(font
@@ -1937,11 +1957,11 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
-			(at 129.54 81.2799 0)
+		(property "Value" "100k"
+			(at 129.54 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left)
 			)
@@ -1982,7 +2002,7 @@
 		(instances
 			(project "astable-oscillator.simulation"
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "R103")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2064,7 +2084,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb5686c9-92c0-4ada-b2df-c0528cf64df0")
-		(property "Reference" "R104"
+		(property "Reference" "R1"
 			(at 104.14 78.7399 0)
 			(effects
 				(font
@@ -2073,11 +2093,11 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
-			(at 104.14 81.2799 0)
+		(property "Value" "100"
+			(at 104.14 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left)
 			)
@@ -2118,7 +2138,7 @@
 		(instances
 			(project "astable-oscillator.simulation"
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "R104")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -2134,8 +2154,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f88899f0-60f5-45cd-9439-5f698d86bf34")
-		(property "Reference" "Q102"
-			(at 181.102 100.3299 0)
+		(property "Reference" "Q2"
+			(at 180.34 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2144,7 +2164,7 @@
 			)
 		)
 		(property "Value" "NPN"
-			(at 181.102 102.8699 0)
+			(at 180.34 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2218,7 +2238,7 @@
 		(instances
 			(project "astable-oscillator.simulation"
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "Q102")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -2234,7 +2254,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9ff8e73-8ebb-4455-b357-6119b6d6aaae")
-		(property "Reference" "R101"
+		(property "Reference" "R3"
 			(at 154.94 78.7399 0)
 			(effects
 				(font
@@ -2243,11 +2263,11 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
-			(at 154.94 81.2799 0)
+		(property "Value" "100k"
+			(at 154.94 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left)
 			)
@@ -2288,7 +2308,7 @@
 		(instances
 			(project ""
 				(path "/f9b52f71-4cc5-45e8-8f08-bf04eea78f5e"
-					(reference "R101")
+					(reference "R3")
 					(unit 1)
 				)
 			)

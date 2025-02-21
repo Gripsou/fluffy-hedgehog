@@ -1,4 +1,4 @@
-Model: PS2561F-1
+* Model: PS2561F-1
 * A = PIN 1: diode anode
 * K = PIN 2: diode cathode
 * E = PIN 3: BJT emitter

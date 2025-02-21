@@ -126,7 +126,7 @@
 				)
 			)
 		)
-		(symbol "SFH6156-2.simulation_model:SFH6156-2"
+		(symbol "SFH6156-2.simulation_model:PS2561F-1"
 			(pin_numbers hide)
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -141,7 +141,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "SFH6156-2"
+			(property "Value" "PS2561F-1"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -158,7 +158,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/83671/sfh6156.pdf"
+			(property "Datasheet" "https://www.renesas.com/en/document/dst/ps2561f-1-ps2561fl-1-datasheet?r=508471"
 				(at 0 0 0)
 				(effects
 					(font
@@ -176,25 +176,25 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Library" "PS2561F-1.lib"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "PS2561F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "Sim.Device" "SUBCKT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Library" "SFH6156-2.sim.txt"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Name" "SFH6156"
 				(at 0 0 0)
 				(effects
 					(font
@@ -221,7 +221,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SFH6156-2_0_1"
+			(symbol "PS2561F-1_0_1"
 				(polyline
 					(pts
 						(xy 2.54 -1.27) (xy 5.08 -1.27)
@@ -259,7 +259,7 @@
 					)
 				)
 			)
-			(symbol "SFH6156-2_1_1"
+			(symbol "PS2561F-1_1_1"
 				(rectangle
 					(start -6.35 3.81)
 					(end 6.35 -3.81)
@@ -3065,7 +3065,7 @@
 		(fields_autoplaced yes)
 		(uuid "18416eba-2095-4b97-943a-d728ae38ec1f")
 		(property "Reference" "R5"
-			(at 129.54 177.7999 0)
+			(at 128.778 177.8739 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,11 +3073,11 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20k"
-			(at 129.54 180.3399 0)
+		(property "Value" "10k"
+			(at 128.778 180.2822 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left)
 			)
@@ -3892,116 +3892,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SFH6156-2.simulation_model:SFH6156-2")
-		(at 114.3 170.18 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "75b1a29b-ce90-488a-ba6c-6266caed7b67")
-		(property "Reference" "U1"
-			(at 114.3 162.56 0)
-			(effects
-				(font
-					(size 1.25 1.25)
-				)
-			)
-		)
-		(property "Value" "SFH6156-2"
-			(at 114.3 165.1 0)
-			(effects
-				(font
-					(size 1.25 1.25)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/83671/sfh6156.pdf"
-			(at 114.3 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Optocoupler, Phototransistor Output, High Reliability, 5300 VRMS"
-			(at 114.3 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 114.3 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "SFH6156-2.sim.txt"
-			(at 114.3 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "SFH6156"
-			(at 114.3 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "A=A C=C E=E K=K"
-			(at 114.3 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "K"
-			(uuid "80bb8d50-344b-4898-9d79-8004c17d1ff4")
-		)
-		(pin "C"
-			(uuid "b68310ae-11d7-4462-8e1d-5a28c132b604")
-		)
-		(pin "E"
-			(uuid "5d3b60b7-7541-4cc6-bf78-b080c4948858")
-		)
-		(pin "A"
-			(uuid "08a8c174-f49c-49eb-8422-9888476f8857")
-		)
-		(instances
-			(project ""
-				(path "/8784c87c-d064-4380-aec7-9dbcace175b6"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+15V")
 		(at 25.4 165.1 0)
 		(unit 1)
@@ -4238,6 +4128,116 @@
 			(project ""
 				(path "/8784c87c-d064-4380-aec7-9dbcace175b6"
 					(reference "V101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SFH6156-2.simulation_model:PS2561F-1")
+		(at 114.3 170.18 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6d917ac-d811-4125-978d-cfedfd3015c9")
+		(property "Reference" "U101"
+			(at 114.3 165.1 0)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+			)
+		)
+		(property "Value" "PS2561F-1"
+			(at 114.3 175.26 0)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.renesas.com/en/document/dst/ps2561f-1-ps2561fl-1-datasheet?r=508471"
+			(at 114.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Optocoupler, Phototransistor Output, High Reliability, 5300 VRMS"
+			(at 114.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "PS2561F-1.lib"
+			(at 114.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "PS2561F"
+			(at 114.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 114.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "A=A C=C E=E K=K"
+			(at 114.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "E"
+			(uuid "b8e80900-3d1e-4a2b-a784-cd180bcb6f2a")
+		)
+		(pin "A"
+			(uuid "1e670d5f-9bb0-4471-8d5f-2809ff5e19ee")
+		)
+		(pin "K"
+			(uuid "9063fda7-a103-4307-a732-8e429e6280bc")
+		)
+		(pin "C"
+			(uuid "1de87e0a-80c0-4f32-b683-1cb8d9c4ed45")
+		)
+		(instances
+			(project ""
+				(path "/8784c87c-d064-4380-aec7-9dbcace175b6"
+					(reference "U101")
 					(unit 1)
 				)
 			)

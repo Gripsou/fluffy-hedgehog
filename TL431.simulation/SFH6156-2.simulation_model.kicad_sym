@@ -330,7 +330,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SFH6156-2"
+		(property "Value" "PS2561F-1"
 			(at 0 -5.08 0)
 			(effects
 				(font
@@ -347,7 +347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.renesas.com/en/document/dst/ps2561f-1-ps2561fl-1-datasheet?r=508471"
 			(at 0 0 0)
 			(effects
 				(font

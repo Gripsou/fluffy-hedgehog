@@ -1,0 +1,174 @@
+* 2CL2FP 30 kV reverse breakdown voltage diode SPICE model
+* 
+* NOTE :
+*   This model wasn't taken from suppplier but created according to avalable
+*   documentation from _Analog Devices_ & _LTwiki_ (for LTspice models), as
+*   well as diode manufacturer (HVCA) avalable information (taken from
+*   component's datasheet)
+*
+* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+*
+* According to https://ltwiki.org/LTspiceHelp/LTspiceHelp/D_Diode :
+* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*   A diode requires a `.model` card to specify its characteristics. There are
+*   two types of diodes available. One is a conduction region-wise linear model
+*   that yields a computationally light weight representation of an idealized
+*   diode. It has three linear regions of conduction: on, off and reverse
+*   breakdown. Forward conduction and reverse breakdown can non-linear by
+*   specifying a current limit with Ilimit(revIlimit). tanh() is used to fit
+*   the slope of the forward conduction to the limit current. The parameters
+*   epsilon and revepsilon can be specified to smoothly switch between the off
+*   and conducting states. A quadratic function is fit between the off and on
+*   state such that the diode's IV curve is continuous in value and slope and
+*   the transition occurs over a voltage specified by the value of epsilon for
+*   the off to forward conduction and revepsilon for the transition between off
+*   and reverse breakdown.
+* 
+*   Below are the model parameters for this type of diode:
+*   +============+==================================+=======+=========+
+*   | Name       | Description                      | Units | Default |
+*   +============+==================================+=======+=========+
+*   | Ron        | Resistance in forward conduction | Ohm   | 1.      |
+*   +------------+----------------------------------+-------+---------+
+*   | Roff       | Resistance when off              | Ohm   | 1./Gmin |
+*   +------------+----------------------------------+-------+---------+
+*   | Vfwd       | Forward threshold voltage to     | V     | 0.      |
+*   |            | enter conduction                 |       |         |
+*   +------------+----------------------------------+-------+---------+
+*   | Vrev       | Reverse breakdown voltage        | V     | Infin.  |
+*   +------------+----------------------------------+-------+---------+
+*   | Rrev       | Breakdown impedance              | Ohm   | Ron     |
+*   +------------+----------------------------------+-------+---------+
+*   | Ilimit     | Forward current limit            | A     | Infin.  |
+*   +------------+----------------------------------+-------+---------+
+*   | Revilimit  | Reverse current limit            | A     | Infin.  |
+*   +------------+----------------------------------+-------+---------+
+*   | Epsilon    | Width of quadratic region        | V     | 0.      |
+*   +------------+----------------------------------+-------+---------+
+*   | Revepsilon | Width of reverse quad. region    | V     | 0.      |
+*   +============+==================================+=======+=========+
+*   This idealized model is used if any of Ron, Roff, Vfwd, Vrev or Rrev is
+*   specified in the model.
+*
+*   The other model available is the standard Berkeley SPICE semiconductor
+*   diode but extended to handle more detailed breakdown behavior and
+*   recombination current. The area factor determines the number of equivalent
+*   parallel devices of a specified model. Below are the diode model parameters
+*   for this diode.
+*   +========+==================================+========+=========+==========+
+*   | Name   | Description                      | Units  | Default | Example  |
+*   +========+==================================+========+=========+==========+
+*   | Is     | saturation current               | A      | 1e-14   | 1e-7     |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Rs     | Ohmic resistance                 | Ohm    | 0.      | 10.      |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | N      | Emission coefficient             | -      | 1       | 1.       |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Tt     | Transit-time                     | sec    | 0.      | 2n       |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Cjo    | Zero-bias junction capacitance   | F      | 0       | 2p       |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Vj     | Junction potential               | V      | 1.      | .6       |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | M      | Grading coefficient              | -      | 0.5     | 0.5      |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Eg     | Activation energy                | eV     | 1.11    | 1.11 Si  |
+*   |        |                                  |        |         | 0.69 Sbd |
+*   |        |                                  |        |         | 0.67 Ge  |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Xti    | Saturation-current temperature   | -      | 3.0     | 3.0 jn   |
+*   |        | exponent                         |        |         | 2.0 Sbd  |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Kf     | Flicker noise coefficient        | -      | 0       |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Af     | Flicker noise exponent           | 1      | 1       |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Fc     | Coefficient for forward-bias     | -      | 0.5     |          |
+*   |        | depletion capacitance formula    |        |         |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | BV     | Reverse breakdown voltage        | V      | Infin.  | 40.      |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Ibv    | Current at breakdown voltage     | A      | 1e-10   |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Tnom   | Parameter measurement temp.      | °C     | 27      | 50       |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Isr    | Recombination current parameter  | A      | 0       |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Nr     | Isr emission coefficient         | -      | 2       |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Ikf    | High-injection knee current      | A      | Infin.  |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Tikf   | Linear Ikf temp coefficient      | /°C    | 0       |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Trs1   | linear Rs temp coefficient       | /°C    | 0       |          |
+*   +--------+----------------------------------+--------+---------+----------+
+*   | Trs2   | Quadratic Rs temp coefficient    | /°C/°C | 0       |          |
+*   +========+==================================+========+=========+==========+
+*
+*   It is possible to specify voltage, current, and power dissipation ratings
+*   for a model. These model parameters do not affect the electrical behavior.
+*   They allow LTspice to check if the diode is being used beyond its rated
+*   capability. The following parameters apply to either model. These
+*   parameters do not scale with area.
+*   +============+==================================+=======+
+*   | Name       | Description                      | Units |
+*   +============+==================================+=======+
+*   | Vpk        | Peak voltage rating              | V     |
+*   +------------+----------------------------------+-------+
+*   | Ipk        | Peak current rating              | A     |
+*   +------------+----------------------------------+-------+
+*   | Iave       | Average current rating           | A     |
+*   +------------+----------------------------------+-------+
+*   | Irms       | RMS current rating               | A     |
+*   +------------+----------------------------------+-------+
+*   | diss       | Maximum power dissipation rating | W     |
+*   +============+==================================+=======+
+* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*
+* Additionnally, the following parameters can be used :
+*   +============+==================================+===========+
+*   | Name       | Description                      | Example   |
+*   +============+==================================+===========+
+*   | Mfg        | Manufacturer                     | Nexperia, |
+*   |            |                                  | OnSemi,   |
+*   |            |                                  | Intel     |
+*   +------------+----------------------------------+-----------+
+*   | Type       | Type of semiconductor used       | silicon   |
+*   |            |                                  | GaN, SiC  |
+*   +============+==================================+===========+
+*   According to paragraph _12.4.1 Diodes_ from the book
+*   _LTspice Essentials - An Introduction to Circuit Simulation_
+*   published by _Elektor International Media_
+*
+* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+*
+* According to _HVCA_'s datasheet, **2CL2FP** characteristics are the
+* following :
+*   +========+===================================+=========+=========+
+*   | Name   | Description                       | Value   | Units   |
+*   +========+===================================+=========+=========+
+*   | Vrrm   | Repetitive Peak Reverse Voltage   | 30 000  | V       |
+*   +--------+-----------------------------------+---------+---------+
+*   |        | Average Forward | T(air) = 40 °C  | 100     |         |
+*   | Ifavm  | Current Maximum +-----------------+---------+ mA      |
+*   |        |                 | T(oil) = 55 °C  | 220     |         |
+*   +--------+-----------------------------------+---------+---------+
+*   | Ifsm   | Maximum Single Cycle Surge        | 10      | A       |
+*   |        | Current                           |         |         |
+*   +--------+-----------------------------------+---------+---------+
+*   | Vf     | Maximum Forward Voltage Drop      | 52      | V       |
+*   |        | at T(air) = 25 °C & 100 mA        |         |         |
+*   +--------+-----------------------------------+---------+---------+
+*   |        | Maximum Reverse | T(air) = 40 °C  | 2.0     |         |
+*   | Ir     | Current         +-----------------+---------+ µA      |
+*   |        |                 | T(air) = 100 °C | 50      |         |
+*   +--------+-----------------------------------+---------+---------+
+*   | Trr    | Maximum Reverse Recovery Time     | 100n    | sec     |
+*   |        | at T(air) = 25 °C                 |         |         |
+*   +--------+-----------------------------------+---------+---------+
+*   | Cj     | Maximum Virtual Junction Cap.     | 15      | pF      |
+*   |        | at T(air) = 25 °C, Vrrm = 0 V,    |         |         |
+*   |        | Freq = 1 MHz                      |         |         |
+*   +--------+-----------------------------------+---------+---------+
+
+.model 2CL2FP D(Bv=30k Iave=220m Ipk=10 Ibv=50u Cjo=15 Mfg=OnSemi Type=silicon)
